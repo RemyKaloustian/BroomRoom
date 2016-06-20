@@ -42,6 +42,9 @@ header i
 #logp
 {
     display:inline;
+    font-family:GothamLight;
+    color:#f5f5f5;
+    margin-left:3px;
 }
 
 #container
@@ -74,10 +77,28 @@ header i
     padding-left:20px;
     padding-top:5px;
     padding-bottom:10px;
-    padding-right:5px;
+    padding-right:25px;
     display:inline-block;
     word-wrap: break-word;
 
+}
+
+#popup
+{
+    font-family:GothamLight;
+}
+
+#popup button
+{
+    font-family:GothamLight;
+    background-color:#0050ef;
+}
+
+
+#popup button:hover
+{   
+    font-family:GothamLight;
+    background-color:#ff6655;
 }
 
 

@@ -44,6 +44,7 @@
   <ItemGroup>
     <Content Include="assets\css\fonts.css" />
     <Content Include="assets\css\foundation.css" />
+    <Content Include="assets\css\hover.css" />
     <Content Include="assets\css\iconate.min.css" />
     <Content Include="assets\css\main.css" />
     <Content Include="assets\js\event.js" />
