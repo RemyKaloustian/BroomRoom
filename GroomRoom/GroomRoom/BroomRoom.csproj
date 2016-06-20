@@ -38,10 +38,13 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="assets\fonts\" />
     <Folder Include="assets\js\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\fonts.css" />
     <Content Include="assets\css\foundation.css" />
+    <Content Include="assets\css\main.css" />
     <Content Include="index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
