@@ -101,6 +101,12 @@ header i
     background-color:#ff6655;
 }
 
+.author
+{
+    font-family:GothamXLight;
+    border-bottom: 1px solid white;
+}
+
 
 #message_input
 {

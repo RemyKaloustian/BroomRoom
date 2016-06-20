@@ -2,3 +2,9 @@
     font-family: 'GothamLight';
     src: url('../fonts/Gotham-Light.otf');
 }
+
+
+@font-face {
+    font-family: 'GothamXLight';
+    src: url('../fonts/Gotham-XLightItalic.ttf');
+}
