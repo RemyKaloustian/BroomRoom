@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="log.php" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +49,7 @@
     <Content Include="assets\js\event.js" />
     <Content Include="assets\js\iconate.js" />
     <Content Include="assets\js\icons.js" />
+    <Content Include="assets\js\main.js" />
     <Content Include="assets\js\responsive.js" />
     <Content Include="index.html" />
   </ItemGroup>

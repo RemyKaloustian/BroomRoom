@@ -39,6 +39,11 @@ header i
 
 }
 
+#logp
+{
+    display:inline;
+}
+
 #container
 {
     //margin-top:50px;

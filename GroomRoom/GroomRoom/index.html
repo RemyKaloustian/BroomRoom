@@ -15,7 +15,14 @@
     <script type="text/javascript" src="assets/js/iconate.js"></script>
     <script type="text/javascript" src="assets/js/icons.js"></script>
     <script type="text/javascript" src="assets/js/event.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
     <script type="text/javascript" src="assets/js/responsive.js"></script>
+
+    <link rel="stylesheet" href="assets/Remodal-1.0.7/dist/remodal.css">
+    <link rel="stylesheet" href="assets/Remodal-1.0.7/dist/remodal-default-theme.css">
+
+    <script src="assets/Remodal-1.0.7/dist/remodal.min.js"></script>
 
     <link href="assets/css/main.css" rel="stylesheet" />
 
@@ -23,10 +30,11 @@
 </head>
 <body>
     <header>
-        <h3>BroomRoom</h3>
+        <h3>BroomRoom // MAIN</h3>
         <i id="comments_icon" class="fa fa-comments fa-lg "></i>
         <i id="pictures_icon" class="fa fa-picture-o fa-lg"></i>
         <i id="user_icon" class="fa fa-user fa-lg"></i>
+        <p id="logp"></p>
     </header>
 
     <section id="container">
@@ -34,6 +42,19 @@
 
         </div>
     </section>
+
+    <div class="remodal" data-remodal-id="modal" id="popup">
+        <!--<div class="" >-->
+        TYPE YOUR PSEUDO
+        
+            <input type="type" id="pseudo_input" name="pseudo" value=" " /><br>
+            <p id="alert"></p>
+            <button id="validate_button">Go on !</button>
+        
+    </div>
+
+  
+
    <input type="text" id="message_input" name="message"><br>
   </body>
 </html>
