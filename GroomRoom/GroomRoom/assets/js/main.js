@@ -3,6 +3,10 @@
 
 var username = "Some douche";
 
+var message = "";
+
+var talk = "main";
+
 
 $(document).ready(function () {
 
