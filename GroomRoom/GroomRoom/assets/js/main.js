@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $("#logp").text("logged as " + username);
 
-    //SelectMessages();
+    SelectMessages();
 
 
 });//ready()

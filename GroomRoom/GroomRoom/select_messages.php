@@ -15,20 +15,30 @@ if($_GET['talk'] != "")
         //NEW STRUCTURE
         $request = $bdd->prepare('SELECT CONTENT,AUTHOR FROM MESSAGE WHERE TALK = :talk');
         $request->execute(array("talk"=>$_GET['talk']));
-        $data = $request->fetch();
+       // $data = $request->fetch();
             
         $comments = new stdClass();
         
-        if(!data)
-        {
-             $reponse = new AJAXAnswer(false, 'aucun nouveaux commentaires');
-             $reponse->answer();
-        }
-        else
-        {
-            
-        }
-
+     
+       
+        
+            while($data = $request->fetch(PDO::FETCH_ASSOC))
+            {
+                //echo'<p>'.$data[\'author\'].' + '.$data[\'content\'];
+                print_r ($data);
+            }
+        
+        
+            //$comments->comments=[];
+            //$i = 0;
+            //foreach($data as $value)
+            //{
+               // $comments->comments[$i] = new stdClass();
+               // $comments->comments[$i]->content = $value['content']
+                //$comments->comments[$i]->date = 
+                //$comments->comments[$i]
+            }
+        
 
     //BEFORE
     //mysql_connect("localhost","root","");
@@ -47,5 +57,5 @@ if($_GET['talk'] != "")
      //if(!$sql)
    // die(mysql_error());
    // mysql_close();
-}
+//}
 ?>
