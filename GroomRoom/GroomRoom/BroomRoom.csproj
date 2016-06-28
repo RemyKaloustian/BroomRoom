@@ -33,7 +33,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="dbconnect.php" />
+    <None Include="insert_message.php" />
     <None Include="log.php" />
+    <None Include="select_messages.php" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,8 +54,10 @@
     <Content Include="assets\js\iconate.js" />
     <Content Include="assets\js\icons.js" />
     <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\message.js" />
     <Content Include="assets\js\responsive.js" />
     <Content Include="index.html" />
+    <Content Include="messages.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
