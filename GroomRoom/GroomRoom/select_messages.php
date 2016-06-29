@@ -15,7 +15,9 @@
         
         while($data = $request->fetch(PDO::FETCH_ASSOC))
         {
-            echo' <p> '.$data['CONTENT'].'</p>';
+            echo' <div class="message_box">
+                            <p class="author"> '.$data['AUTHOR'].'</p>'.$data['CONTENT'].
+                        '</div><br>';
             
         }       
        
