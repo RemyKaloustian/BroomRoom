@@ -7,6 +7,8 @@
     header('Cache-Control: no-cache, must-revalidate');
     header('Expires: Mon, 26 Jul 1997 05:00:00 GMT');
     header('Content-type: application/json');
+    
+    echo'OMG MARCHE !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!';
 
 //If values are correctly set
 if($_GET['talk'] != "")
@@ -35,9 +37,15 @@ if($_GET['talk'] != "")
         
         while($data = $request->fetch(PDO::FETCH_ASSOC))
         {
-            print_r($data['CONTENT']."\n");
+            //print_r($data['CONTENT']."\n");
+            echo' <p> '.$data['CONTENT'].'</p>';
             
         }
+        
+        $html = '<p> Une reponse lol</p>';
+        
+        //$reponse = new AJAXAnswer(true,$html);
+        //$reponse->answer();
             
         
         

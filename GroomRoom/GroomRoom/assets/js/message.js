@@ -40,9 +40,17 @@ var talk = "main";
                         data: "talk=" + talk,
                         //Si l'insertion marche, le commentaire est retourné et est affiché afin que la publication soit dynamique
                         success: function (html) {
+                            alert(html);
                             console.log("In success");
                             $("#message_box").prepend(html)
-                        }
+                        },
+
+                        error: function (html) {
+                            alert(html);
+                            console.log("In error");
+                            $("#message_box").prepend(html)
+    
+        }
 
                     });//ajax()
 
