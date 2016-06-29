@@ -12,32 +12,50 @@
 if($_GET['talk'] != "")
 {
 
-        //NEW STRUCTURE
-        $request = $bdd->prepare('SELECT CONTENT,AUTHOR FROM MESSAGE WHERE TALK = :talk');
+
+
+        //NEW STRUCTURE TEST 2
+        
+        //$reponse = $bdd->query('SELECT AUTHOR,CONTENT FROM MESSAGE WHERE TALK =\"'.$_GET['talk'].'\"');
+        
+       // while($donnees = $reponse->fetch())
+        //{
+           // echo'<p>'.$donnees['content'].'</p>';
+        
+       // }
+        
+    //}
+        
+
+
+        //NEW STRUCTURE TEST 1
+        $request = $bdd->prepare('SELECT AUTHOR,CONTENT FROM MESSAGE WHERE TALK = :talk');
         $request->execute(array("talk"=>$_GET['talk']));
-       // $data = $request->fetch();
+        
+        
+        while($data = $request->fetch(PDO::FETCH_ASSOC))
+        {
+            print_r($data['CONTENT']."\n");
             
-        $comments = new stdClass();
+        }
+            
         
-     
+        
+          
        
-        
-            while($data = $request->fetch(PDO::FETCH_ASSOC))
-            {
-                //echo'<p>'.$data[\'author\'].' + '.$data[\'content\'];
-                print_r ($data);
-            }
-        
-        
-            //$comments->comments=[];
-            //$i = 0;
-            //foreach($data as $value)
+   }     
+           // while($data = $request->fetch())
             //{
-               // $comments->comments[$i] = new stdClass();
-               // $comments->comments[$i]->content = $value['content']
-                //$comments->comments[$i]->date = 
-                //$comments->comments[$i]
-            }
+                //echo'<p>'.$data[\'author\'].' + '.$data[\'content\'];
+                //print_r ($data);
+               // foreach($data as $value)
+               // {
+                    //print_r($value[0]);
+                //}
+            //}
+        
+        
+           
         
 
     //BEFORE
