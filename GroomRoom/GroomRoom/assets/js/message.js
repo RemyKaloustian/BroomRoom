@@ -3,7 +3,6 @@ var talk = "main";
 
 function InsertMessage()
 {
-        console.log("In InsertMessage()");
         $.get('insert_message.php?message=' + message + '&author=' + username + '&talk=' + talk, function (data)
         {
             alert(data);
@@ -37,8 +36,6 @@ function ScrollToLastMessage()
 
     function SelectMessages() 
     {
-        console.log("Selecting messages");
-        console.log("Talk = " + talk);
 
         $.ajax(
                     {
@@ -49,7 +46,6 @@ function ScrollToLastMessage()
                         success: function (html) 
                        { 
                             //alert(html);
-                            console.log("In success");
                             $("#message_box").prepend(html)
                             AddMarginBottom();
                             //ScrollToLastMessage();

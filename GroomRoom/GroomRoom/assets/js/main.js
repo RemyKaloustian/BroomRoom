@@ -5,12 +5,16 @@ var username = "Some douche";
 
 var message = "";
 
+var lastId = 0;
+
 
 
 
 $(document).ready(function () {
 
     $("#logp").text("logged as " + username);
+
+    console.log("lastId = " + lastId);
 
     //Getting the messages from the talk at the beginning
     SelectMessages();
@@ -19,3 +23,5 @@ $(document).ready(function () {
     setInterval(function () { RefreshMessages(); }, 2000);
 
 });//ready()
+
+
