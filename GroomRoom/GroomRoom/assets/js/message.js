@@ -8,15 +8,6 @@ var talk = "main";
         });
 
 
-        //$.ajax({
-        //    data: data,
-        //    type: "get",
-        //    url: "insert_message.php?message=" + message + "&author=" + username + "&talk=" + talk,
-        //    success: function (data) {
-        //        alert("Data Save: " + data);
-        //    }
-        //});
-
     }//InsertMessage()
 
     function InsertMessageXML() {
