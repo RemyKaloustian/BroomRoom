@@ -50,10 +50,11 @@ function ScrollToLastMessage()
                        
                         success: function (html) 
                        { 
-                            alert(html);
+                            //alert(html);
                             console.log("In success");
                             $("#message_box").prepend(html)
                             AddMarginBottom();
+                            //ScrollToLastMessage();
                         },
 
                         error: function (html)
