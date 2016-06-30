@@ -32,9 +32,7 @@ function ScrollToLastMessage()
     {
         scrollTop: $(the_id).offset().top
     }, 'slow');
-}
-
-
+}//ScrollToLastMessage()
 
 
     function SelectMessages() 
@@ -66,5 +64,10 @@ function ScrollToLastMessage()
                     });//ajax()
 
     }//SelectMessages()
+
+    function RefreshMessages()
+    {
+        console.log("Refreshing the messages");
+    }//RefreshMessages()
 
 
