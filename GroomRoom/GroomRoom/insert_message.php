@@ -29,8 +29,8 @@
      // $author=$_GET['author'];
       //$talk=$_GET['talk'];
 
-      $sql="INSERT INTO message VALUES ('$content','$author', '$talk')";
-      $result=mysql_query($sql);
+      //$sql="INSERT INTO message VALUES ('$content','$author', '$talk')";
+      //$result=mysql_query($sql);
       //if($result){
       //echo "You have been successfully subscribed.";
           //      setcookie("msg","You have been successfully subscribed.",time()+5,"/");

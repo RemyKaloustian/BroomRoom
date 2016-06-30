@@ -120,3 +120,8 @@ header i
     font-family: GothamLight;
     font-size:1.2rem;
 }
+
+.last_message
+{
+    margin-bottom:10%;
+}
