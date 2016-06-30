@@ -6,7 +6,7 @@ function InsertMessage()
         console.log("In InsertMessage()");
         $.get('insert_message.php?message=' + message + '&author=' + username + '&talk=' + talk, function (data)
         {
-           // alert(data);
+            alert(data);
         });
 
 

@@ -12,7 +12,7 @@
   
   //NEW SOLUTION
   
-  $insertion = $bdd->prepare('INSERT INTO message VALUES (:content, :author, :talk)');
+  $insertion = $bdd->prepare('INSERT INTO message(content,author,talk) VALUES (:content, :author, :talk)');
   $insertion->execute(array(
         'content'=>$_GET['message'],
         'author'=>$_GET['author'],
