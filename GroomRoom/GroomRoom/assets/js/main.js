@@ -30,3 +30,10 @@ function IncrementLastId()
 }//IncrementLastId()
 
 
+function TreatLastId()
+{
+    lastId = parseInt($(".lastId").last().text());
+    console.log("lastId is now = " + lastId);
+    $(".lastId").last().css("display", "none");
+}//TreatLastId()
+

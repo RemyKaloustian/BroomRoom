@@ -48,6 +48,7 @@ function ScrollToLastMessage()
                             //alert(html);
                             $("#message_box").prepend(html)
                             AddMarginBottom();
+                            TreatLastId();
                             //ScrollToLastMessage();
                         },
 
