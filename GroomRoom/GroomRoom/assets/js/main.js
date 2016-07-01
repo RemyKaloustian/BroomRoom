@@ -19,7 +19,8 @@ $(document).ready(function () {
     SelectMessages();
 
     //Refreshing the messages every 2 seconds
-    setInterval(function () { RefreshMessages(); }, 2000);
+    setInterval(function () { RefreshMessages(); 
+    }, 10000);
 
 });//ready()
 

@@ -58,6 +58,7 @@
     <Content Include="assets\js\responsive.js" />
     <Content Include="index.html" />
     <Content Include="messages.xml" />
+    <Content Include="select_dynamic_messages.php" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
