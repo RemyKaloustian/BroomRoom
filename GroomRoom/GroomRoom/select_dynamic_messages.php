@@ -33,7 +33,7 @@ if($_POST['talk'] != "")
     }       
 
     //is used to transmit the last id to the client side.
-    echo  '<p class="lastId"> '.$id.'</p>';
+    echo  '<p id="lastId"> '.$id.'</p>';
     
 }             
 

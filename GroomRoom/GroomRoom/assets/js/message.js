@@ -77,8 +77,10 @@ function ScrollToLastMessage()
                         },
 
                         success: function (html) {
-                            //alert(html);
-                            $("#message_box").prepend(html)
+                            console.log("In success");
+                           // alert(html);
+                            $("#message_box").append(html);
+                            RemoveMarginBottom();
                             AddMarginBottom();
                             TreatLastId();
                             //ScrollToLastMessage();

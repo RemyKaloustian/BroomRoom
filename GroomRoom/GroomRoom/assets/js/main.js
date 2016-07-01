@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     //Refreshing the messages every 2 seconds
     setInterval(function () { RefreshMessages(); 
-    }, 10000);
+    }, 5000);
 
 });//ready()
 
@@ -33,8 +33,8 @@ function IncrementLastId()
 
 function TreatLastId()
 {
-    lastId = parseInt($(".lastId").last().text());
+    lastId = parseInt($("#lastId").text());
     console.log("lastId is now = " + lastId);
-    $(".lastId").last().css("display", "none");
+    $("#lastId").remove();
 }//TreatLastId()
 
