@@ -1,40 +1,42 @@
 ﻿
 //SUPER USEFUL STUF IS DONE HERE
 
-var username = "Some douche";
+var _username = "Some douche";
 
-var message = "";
+var _message = "";
 
-var lastId = 0;
+var _lastId = 0;
+
+var _refreshTime = 1000;
 
 
 
 
 $(document).ready(function () {
 
-    $("#logp").text("logged as " + username);
+    $("#logp").text("logged as " + _username);
 
 
-    //Getting the messages from the talk at the beginning
+    //Getting the _messages from the talk at the beginning
     SelectMessages();
 
     //Refreshing the messages every 2 seconds
     setInterval(function () { RefreshMessages(); 
-    }, 1000);
+    }, _refreshTime);
 
 });//ready()
 
 
 function IncrementLastId()
 {
-    lastId++;
+    _lastId++;
 }//IncrementLastId()
 
 
 function TreatLastId()
 {
-    lastId = parseInt($("#lastId").text());
-    console.log("lastId is now = " + lastId);
+    _lastId = parseInt($("#lastId").text());
+    console.log("lastId is now = " + _lastId);
     $("#lastId").remove();
 }//TreatLastId()
 

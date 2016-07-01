@@ -1,10 +1,10 @@
 ﻿
-var talk = "main";
+var _talk = "main";
 
 //Inserts a message in the database
 function InsertMessage()
 {
-        $.get('insert_message.php?message=' + message + '&author=' + username + '&talk=' + talk, function (data)
+        $.get('insert_message.php?message=' + _message + '&author=' + _username + '&talk=' + _talk, function (data)
         {
             //alert(data);
         });
@@ -43,7 +43,7 @@ function ScrollToLastMessage()
                     {
                         url: "select_messages.php",
                         type: "GET",
-                        data: "talk=" + talk,
+                        data: "talk=" + _talk,
                        
                         success: function (html) 
                        { 
@@ -72,8 +72,8 @@ function ScrollToLastMessage()
                         url: "select_dynamic_messages.php",
                         type: "POST",
                         data: {
-                            talk: talk,
-                            id: lastId
+                            talk: _talk,
+                            id: _lastId
                         },
 
                         success: function (html) {
