@@ -20,7 +20,7 @@ $(document).ready(function () {
 
     //Refreshing the messages every 2 seconds
     setInterval(function () { RefreshMessages(); 
-    }, 5000);
+    }, 1000);
 
 });//ready()
 

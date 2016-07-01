@@ -6,7 +6,7 @@ function InsertMessage()
 {
         $.get('insert_message.php?message=' + message + '&author=' + username + '&talk=' + talk, function (data)
         {
-            alert(data);
+            //alert(data);
         });
 
 
@@ -78,12 +78,13 @@ function ScrollToLastMessage()
 
                         success: function (html) {
                             console.log("In success");
-                           // alert(html);
-                            $("#message_box").append(html);
+                            // alert(html);      
                             RemoveMarginBottom();
+
+                            $("#message_box").append(html);
                             AddMarginBottom();
                             TreatLastId();
-                            //ScrollToLastMessage();
+                            ScrollToLastMessage();
                         },
 
                         error: function (html) {
