@@ -15,7 +15,7 @@ $id=$_POST["id"];
 if($_POST['talk'] != "")
 {
 
-    //Selecting id, author and content of messages from the corresponding talk
+    //Selecting id, author and content of messages from the corresponding talk, where the id is superior to the last displayed message
     $request = $bdd->prepare('SELECT ID,AUTHOR,CONTENT FROM MESSAGE WHERE TALK = :talk AND ID > :id');
     $request->execute(array("talk"=>$_POST['talk'],"id"=>$_POST['id']   ));        
     

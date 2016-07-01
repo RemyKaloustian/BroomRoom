@@ -1,5 +1,5 @@
 ﻿
-//SUPER USEFUL STUF IS DONE HERE
+//SUPER USEFUL STUFF IS DONE HERE
 
 var _username = "Some douche";
 
@@ -9,10 +9,8 @@ var _lastId = 0;
 
 var _refreshTime = 1000;
 
-
-
-
-$(document).ready(function () {
+$(document).ready(function ()
+{
 
     $("#logp").text("logged as " + _username);
 
@@ -33,6 +31,7 @@ function IncrementLastId()
 }//IncrementLastId()
 
 
+//Save the last id and removes the paragraph containing its value
 function TreatLastId()
 {
     _lastId = parseInt($("#lastId").text());
