@@ -84,7 +84,13 @@ function ScrollToLastMessage()
                             $("#message_box").append(html);
                             AddMarginBottom();
                             TreatLastId();
-                            ScrollToLastMessage();
+                            console.log("LENGTH : " + html.length);
+
+                            var messagebox = "message_box";
+                            if (html.indexOf(messagebox) != -1)
+                            {
+                                ScrollToLastMessage();
+                            }
                         },
 
                         error: function (html) {
