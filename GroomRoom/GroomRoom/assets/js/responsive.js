@@ -14,5 +14,16 @@ $(document).ready(function () {
 
     $("#container").css("marginTop", $("header").height().toString() + "px");
 
+    SetUpPicBox();
+
 
 });
+
+function SetUpPicBox()
+{
+    console.log("In SetUpPicBox");
+    console.log("header.height = " + $("header").height().toString());
+    $("#pics_box").css("width", ($(window).width() * 0.3).toString() + "px");
+    $("#pics_box").css("top", $("header").height().toString() + "px");
+    $("#pics_box").css("left", ($(window).width() - $("#pics_box").width()).toString() + "px");
+}//SetUpPicBox()

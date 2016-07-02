@@ -59,6 +59,16 @@ header i
 }
 
 
+#pics_box
+{
+    background-color:#ff6655;
+    position:fixed;
+    //padding-right: 50px;
+    //left:500px;
+    //top: 1px;
+
+}
+
 
 .message_box
 {
