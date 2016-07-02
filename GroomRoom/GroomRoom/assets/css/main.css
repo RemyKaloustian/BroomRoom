@@ -61,11 +61,27 @@ header i
 
 #pics_box
 {
-    background-color:#ff6655;
     position:fixed;
     //padding-right: 50px;
     //left:100%;
     //top: 1px;
+    overflow-y:auto;
+    padding-left:10px;
+    background-color:#f5f5f5;
+    color:#0050ef;
+    font-family:GothamLight;
+
+}
+
+#pics_box  h5
+{
+    color : #0050ef;
+        font-family:GothamLight;
+
+}
+
+#pics_box_title
+{
 
 }
 
