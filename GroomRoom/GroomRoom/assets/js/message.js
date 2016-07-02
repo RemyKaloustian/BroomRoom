@@ -66,7 +66,7 @@ function ScrollToLastMessage()
 
     function RefreshMessages()
     {
-        console.log("Refreshing the messages");
+        //console.log("Refreshing the messages");
         $.ajax(
                     {
                         url: "select_dynamic_messages.php",
@@ -77,14 +77,14 @@ function ScrollToLastMessage()
                         },
 
                         success: function (html) {
-                            console.log("In success");
+                            //console.log("In success");
                             // alert(html);      
                             RemoveMarginBottom();
 
                             $("#message_box").append(html);
                             AddMarginBottom();
                             TreatLastId();
-                            console.log("LENGTH : " + html.length);
+                            //console.log("LENGTH : " + html.length);
 
                             var messagebox = "message_box";
                             if (html.indexOf(messagebox) != -1)

@@ -109,6 +109,11 @@ header i
 
 }
 
+.message_pic
+{
+    width:150px;
+}
+
 #popup
 {
     font-family:GothamLight;

@@ -14,6 +14,8 @@ $(document).ready(function ()
 
     $("#logp").text("logged as " + _username);
 
+    
+
 
     //Getting the _messages from the talk at the beginning
     SelectMessages();
