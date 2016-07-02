@@ -43,9 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\fonts\" />
-    <Folder Include="pictures\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\colors.css" />
     <Content Include="assets\css\fonts.css" />
     <Content Include="assets\css\foundation.css" />
     <Content Include="assets\css\hover.css" />
@@ -60,6 +60,23 @@
     <Content Include="assets\js\responsive.js" />
     <Content Include="index.html" />
     <Content Include="messages.xml" />
+    <Content Include="pictures\black.jpg" />
+    <Content Include="pictures\brent.gif" />
+    <Content Include="pictures\cena.gif" />
+    <Content Include="pictures\crawling.jpg" />
+    <Content Include="pictures\ethan.jpg" />
+    <Content Include="pictures\leeeeee.jpg" />
+    <Content Include="pictures\pain1.jpg" />
+    <Content Include="pictures\pain2.jpg" />
+    <Content Include="pictures\pain3.jpg" />
+    <Content Include="pictures\soflo.jpg" />
+    <Content Include="pictures\stomedy1.jpg" />
+    <Content Include="pictures\stomedy2.jpg" />
+    <Content Include="pictures\stomedy3.jpg" />
+    <Content Include="pictures\usmot.jpg" />
+    <Content Include="pictures\zac1.jpg" />
+    <Content Include="pictures\zac2.jpg" />
+    <Content Include="pictures\zac3.jpg" />
     <Content Include="select_dynamic_messages.php" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

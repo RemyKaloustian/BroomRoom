@@ -48,7 +48,8 @@ function ScrollToLastMessage()
                         success: function (html) 
                        { 
                             //alert(html);
-                            $("#message_box").prepend(html)
+                            $("#message_box").prepend(html);
+                            AddColorAfterRefresh();
                             AddMarginBottom();
                             TreatLastId();
                             //ScrollToLastMessage();
@@ -82,6 +83,7 @@ function ScrollToLastMessage()
                             RemoveMarginBottom();
 
                             $("#message_box").append(html);
+                            AddColorAfterRefresh();
                             AddMarginBottom();
                             TreatLastId();
                             //console.log("LENGTH : " + html.length);
