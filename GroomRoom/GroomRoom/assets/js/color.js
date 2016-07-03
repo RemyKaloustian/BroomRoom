@@ -17,6 +17,7 @@ function AddColorAfterRefresh()
     $(".message_box").each(function () {
         $(this).addClass("c"+_color);
     });
+
 }
 
 
@@ -24,5 +25,7 @@ function AddColorAfterRefresh()
 $(document).ready(function () {
     $("header").addClass("c" + _color);
     $("#validate_button").addClass("c" + _color);
+    console.log("!!!!color : " + _color);
+    
 
 });

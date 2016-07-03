@@ -16,6 +16,10 @@ $(document).ready(function ()
 
     //Getting the _messages from the talk at the beginning
     SelectMessages();
+    
+    $("#pics_box > p").each(function () {
+        $(this).css('color', "#" + _color);
+    });
 
     //Refreshing the messages every 2 seconds
     setInterval(function () { RefreshMessages(); 

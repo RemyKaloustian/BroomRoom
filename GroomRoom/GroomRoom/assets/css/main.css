@@ -68,14 +68,14 @@ header i
     overflow-y:auto;
     padding-left:10px;
     background-color:#f5f5f5;
-    color:#0050ef;
+    //color:#0050ef;
     font-family:GothamLight;
 
 }
 
 #pics_box  h5
 {
-    color : #0050ef;
+    //color : #0050ef;
         font-family:GothamLight;
 
 }
