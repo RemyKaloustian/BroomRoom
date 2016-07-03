@@ -57,7 +57,7 @@ function ScrollToLastMessage()
 
                         error: function (html)
                         {
-                            alert(html);
+                            //alert(html);
                             console.log("In error");
     
                         }
@@ -96,7 +96,7 @@ function ScrollToLastMessage()
                         },
 
                         error: function (html) {
-                            alert(html);
+                            //alert(html);
                             console.log("In error");
 
                         }

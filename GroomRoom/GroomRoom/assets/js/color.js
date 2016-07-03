@@ -13,9 +13,9 @@ console.log("The color is " + _color);
 
 function AddColorAfterRefresh()
 {
-    console.log("In AddColor, the color is :" + _color);
+   // console.log("In AddColor, the color is :" + _color);
     $(".message_box").each(function () {
-        $(this).addClass(_color);
+        $(this).addClass("c"+_color);
     });
 }
 
