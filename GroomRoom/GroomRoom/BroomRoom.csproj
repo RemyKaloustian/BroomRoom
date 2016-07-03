@@ -57,6 +57,7 @@
     <Content Include="assets\js\icons.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\message.js" />
+    <Content Include="assets\js\pictures.js" />
     <Content Include="assets\js\responsive.js" />
     <Content Include="index.html" />
     <Content Include="messages.xml" />
