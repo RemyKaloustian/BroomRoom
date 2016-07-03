@@ -109,6 +109,11 @@ header i
 
 }
 
+.new_message_box
+{
+    margin-left:20%;
+}
+
 .message_pic
 {
     width:150px;
