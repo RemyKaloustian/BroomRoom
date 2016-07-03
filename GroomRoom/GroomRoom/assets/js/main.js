@@ -7,7 +7,7 @@ var _message = "";
 
 var _lastId = 0;
 
-var _refreshTime = 1000;
+var _refreshTime = 500;
 
 $(document).ready(function ()
 {

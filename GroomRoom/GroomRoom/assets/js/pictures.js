@@ -2,7 +2,6 @@
 
 function CheckImages() {
 
-    //var pics_jpg = [":zac1",":zac2"]
 
     if (_message.indexOf(":zac1") > -1) {
         while (_message.indexOf(":zac1") > -1) {
@@ -130,139 +129,129 @@ function CheckImages() {
 
 
 
-
-
-
 function CheckImagesAfterSelect() {
 
-    //var pics_jpg = [":zac1",":zac2"]
 
-    $(".message_box").each(function() {
+    $(".message_box").each(function() {    
 
-    
-
-        if ($(this).text().indexOf(":zac1") > -1) {
-            while ($(this).text().indexOf(":zac1") > -1) {
-
-
-
+        if ($(this).html().indexOf(":zac1") > -1) {
+            while ($(this).html().indexOf(":zac1") > -1) {
                 $(this).html($(this).html().replace(":zac1", "<img src=\"pictures/zac1.jpg\" class=\"message_pic\" />"));
+            }
+        }
+
+        if ($(this).html().indexOf(":zac2") > -1) {
+            while ($(this).html().indexOf(":zac2") > -1) {
+                $(this).html($(this).html().replace(":zac2", "<img src=\"pictures/zac2.jpg\" class=\"message_pic\" />"));
 
             }
         }
 
-        //if (message.indexOf(":zac2") > -1) {
-        //    while (message.indexOf(":zac2") > -1) {
-        //        message = message.replace(":zac2", "<img src=\"pictures/zac2.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":zac3") > -1) {
+            while ($(this).html().indexOf(":zac3") > -1) {
+                $(this).html( $(this).html().replace(":zac3", "<img src=\"pictures/zac3.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":zac3") > -1) {
-        //    while (message.indexOf(":zac3") > -1) {
-        //        message = message.replace(":zac3", "<img src=\"pictures/zac3.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":usmot") > -1) {
+            while ($(this).html().indexOf(":usmot") > -1) {
+                $(this).html( $(this).html().replace(":usmot", "<img src=\"pictures/usmot.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":usmot") > -1) {
-        //    while (message.indexOf(":usmot") > -1) {
-        //        message = message.replace(":usmot", "<img src=\"pictures/usmot.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":stomedy3") > -1) {
+            while ($(this).html().indexOf(":stomedy3") > -1) {
+                $(this).html( $(this).html().replace(":stomedy3", "<img src=\"pictures/stomedy3.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":stomedy3") > -1) {
-        //    while (message.indexOf(":stomedy3") > -1) {
-        //        message = message.replace(":stomedy3", "<img src=\"pictures/stomedy3.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":stomedy2") > -1) {
+            while ($(this).html().indexOf(":stomedy2") > -1) {
+                $(this).html( $(this).html().replace(":stomedy2", "<img src=\"pictures/stomedy2.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
-
-        //if (message.indexOf(":stomedy2") > -1) {
-        //    while (message.indexOf(":stomedy2") > -1) {
-        //        message = message.replace(":stomedy2", "<img src=\"pictures/stomedy2.jpg\" class=\"message_pic\" />");
-
-        //    }
-        //}
+            }
+        }
 
 
-        //if (message.indexOf(":stomedy1") > -1) {
-        //    while (message.indexOf(":stomedy1") > -1) {
-        //        message = message.replace(":stomedy1", "<img src=\"pictures/stomedy1.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":stomedy1") > -1) {
+            while ($(this).html().indexOf(":stomedy1") > -1) {
+                $(this).html($(this).html().replace(":stomedy1", "<img src=\"pictures/stomedy1.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":soflo") > -1) {
-        //    while (message.indexOf(":soflo") > -1) {
-        //        message = message.replace(":soflo", "<img src=\"pictures/soflo.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":soflo") > -1) {
+            while ($(this).html().indexOf(":soflo") > -1) {
+                $(this).html( $(this).html().replace(":soflo", "<img src=\"pictures/soflo.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":pain3") > -1) {
-        //    while (message.indexOf(":pain3") > -1) {
-        //        message = message.replace(":pain3", "<img src=\"pictures/pain3.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":pain3") > -1) {
+            while ($(this).html().indexOf(":pain3") > -1) {
+                $(this).html( $(this).html().replace(":pain3", "<img src=\"pictures/pain3.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":pain2") > -1) {
-        //    while (message.indexOf(":pain2") > -1) {
-        //        message = message.replace(":pain2", "<img src=\"pictures/pain2.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":pain2") > -1) {
+            while ($(this).html().indexOf(":pain2") > -1) {
+                $(this).html( $(this).html().replace(":pain2", "<img src=\"pictures/pain2.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":pain1") > -1) {
-        //    while (message.indexOf(":pain1") > -1) {
-        //        message = message.replace(":pain1", "<img src=\"pictures/pain1.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":pain1") > -1) {
+            while ($(this).html().indexOf(":pain1") > -1) {
+                $(this).html( $(this).html().replace(":pain1", "<img src=\"pictures/pain1.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":leeeeee") > -1) {
-        //    while (message.indexOf(":leeeeee") > -1) {
-        //        message = message.replace(":leeeeee", "<img src=\"pictures/leeeeee.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":leeeeee") > -1) {
+            while ($(this).html().indexOf(":leeeeee") > -1) {
+                $(this).html( $(this).html().replace(":leeeeee", "<img src=\"pictures/leeeeee.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":ethan") > -1) {
-        //    while (message.indexOf(":ethan") > -1) {
-        //        message = message.replace(":ethan", "<img src=\"pictures/ethan.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":ethan") > -1) {
+            while ($(this).html().indexOf(":ethan") > -1) {
+                $(this).html( $(this).html().replace(":ethan", "<img src=\"pictures/ethan.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":crawling") > -1) {
-        //    while (message.indexOf(":crawling") > -1) {
-        //        message = message.replace(":crawling", "<img src=\"pictures/crawling.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":crawling") > -1) {
+            while ($(this).html().indexOf(":crawling") > -1) {
+                $(this).html($(this).html().replace(":crawling", "<img src=\"pictures/crawling.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":cena") > -1) {
-        //    while (message.indexOf(":cena") > -1) {
-        //        message = message.replace(":cena", "<img src=\"pictures/cena.gif\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":cena") > -1) {
+            while ($(this).html().indexOf(":cena") > -1) {
+                $(this).html( $(this).html().replace(":cena", "<img src=\"pictures/cena.gif\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":brent") > -1) {
-        //    while (message.indexOf(":brent") > -1) {
-        //        message = message.replace(":brent", "<img src=\"pictures/brent.gif\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":brent") > -1) {
+            while ($(this).html().indexOf(":brent") > -1) {
+                $(this).html( $(this).html().replace(":brent", "<img src=\"pictures/brent.gif\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
-        //if (message.indexOf(":black") > -1) {
-        //    while (message.indexOf(":black") > -1) {
-        //        message = message.replace(":black", "<img src=\"pictures/black.jpg\" class=\"message_pic\" />");
+        if ($(this).html().indexOf(":black") > -1) {
+            while ($(this).html().indexOf(":black") > -1) {
+                $(this).html( $(this).html().replace(":black", "<img src=\"pictures/black.jpg\" class=\"message_pic\" />"));
 
-        //    }
-        //}
+            }
+        }
 
     });
 }//CheckImages()
