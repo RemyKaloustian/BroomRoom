@@ -52,6 +52,8 @@ function ScrollToLastMessage()
                             AddColorAfterRefresh();
                             AddMarginBottom();
                             TreatLastId();
+                            CheckImagesAfterSelect();
+
                             //ScrollToLastMessage();
                         },
 
@@ -86,6 +88,8 @@ function ScrollToLastMessage()
                             AddColorAfterRefresh();
                             AddMarginBottom();
                             TreatLastId();
+                            CheckImagesAfterSelect();
+
                             //console.log("LENGTH : " + html.length);
 
                             var messagebox = "message_box";
