@@ -22,6 +22,7 @@ function AddColorAfterRefresh()
 
 
 $(document).ready(function () {
-    
+    $("header").addClass("c" + _color);
+    $("#validate_button").addClass("c" + _color);
 
 });

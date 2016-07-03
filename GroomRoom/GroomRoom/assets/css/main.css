@@ -5,7 +5,7 @@
 header
 { 
 
-    background-color : #0050ef;
+    //background-color : #0050ef;
     margin-top:0px;
     width:100%;
  height:60px;
@@ -127,7 +127,7 @@ header i
 #popup button
 {
     font-family:GothamLight;
-    background-color:#0050ef;
+    //background-color:#0050ef;
 }
 
 
