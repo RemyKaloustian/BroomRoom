@@ -73,6 +73,12 @@ header i
 
 }
 
+#pics_box p
+{
+    margin-bottom:0px;
+}
+
+
 #pics_box  h5
 {
     //color : #0050ef;

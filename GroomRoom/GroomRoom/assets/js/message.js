@@ -47,7 +47,7 @@ function ScrollToLastMessage()
                        
                         success: function (html) 
                        { 
-                            alert(html);
+                            //alert(html);
                             $("#message_box").prepend(html);
                             AddColorAfterRefresh();
                             AddMarginBottom();

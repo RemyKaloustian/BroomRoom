@@ -24,8 +24,8 @@ $(document).ready(function ()
     });
 
     //Refreshing the messages every 2 seconds
-    //setInterval(function () { RefreshMessages(); 
-    //}, _refreshTime);
+    setInterval(function () { RefreshMessages(); 
+    }, _refreshTime);
 
 });//ready()
 

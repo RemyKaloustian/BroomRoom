@@ -19,8 +19,8 @@ $(document).ready(function () {
     popup.open();
 
     $("#container").css("marginTop", $("header").height().toString() + "px");
-
     $("#pics_box").css("display", "none");
+
     SetUpPicBox();
 
 
@@ -34,6 +34,12 @@ function SetUpPicBox()
     $("#pics_box").css("width", ($(window).width() * 0.3).toString() + "px");
     $("#pics_box").css("top", $("header").height().toString() + "px");
     $("#pics_box").css("left", ($(window).width() - $("#pics_box").width()).toString() + "px");
+
+    if($(window).height() < 900)
+    {
+        $("#pics_box > p").css("font-size", "13px");
+    }
+
 }//SetUpPicBox()
 
 function UnsetPicBox()
