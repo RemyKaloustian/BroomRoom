@@ -1,6 +1,7 @@
 ﻿var popup //The login popup
 var talk_popup //The conversation popup
 var newtalk_popup // The new conversation popup
+var switchtalk_popup // The switch conversation popup
 
 
 //IS USED TO MAKE A RESPONSIVE DESIGN
@@ -10,7 +11,7 @@ $(document).ready(function () {
     popup = $('[data-remodal-id=popup]').remodal();
     talk_popup = $('[data-remodal-id=talk_popup]').remodal();
     newtalk_popup = $('[data-remodal-id=newtalk_popup]').remodal();
-
+    switchtalk_popup = $('[data-remodal-id=switchtalk_popup]').remodal();
 
     /**
      * Opens the modal window
