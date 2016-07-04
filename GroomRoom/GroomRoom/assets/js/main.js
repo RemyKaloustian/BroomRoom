@@ -8,6 +8,7 @@ var _message = "";
 var _lastId = 0;
 
 var _refreshTime = 500;
+var _newTalk = "";
 
 $(document).ready(function ()
 {
@@ -42,3 +43,23 @@ function TreatLastId()
     $("#lastId").remove();
 }//TreatLastId()
 
+function SetId(value)
+{
+    _lastId = value;
+}//SetId
+
+
+function SetTalk(value)
+{
+    _talk = value;
+}//SetTalk()
+
+function SetTitle()
+{
+    $("#page_title").text("BroomRoom  //" + _talk);
+}//SetTitle();
+
+function CleanMessages()
+{
+    $("#message_box").empty();
+}//CleanMessages()
