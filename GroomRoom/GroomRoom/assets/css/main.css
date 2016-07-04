@@ -130,11 +130,15 @@ header i
     //background-color:#0050ef;
 }
 
-
-#popup button:hover
-{   
+button
+{
     font-family:GothamLight;
-    background-color:#ff6655;
+}
+
+
+#talk_popup button
+{   
+   width:55%;
 }
 
 .author

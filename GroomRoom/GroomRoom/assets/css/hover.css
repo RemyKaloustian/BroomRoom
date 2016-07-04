@@ -2000,7 +2000,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #e1e1e1;
+  /*background: #e1e1e1;*/
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
   -webkit-transform-origin: 50%;
@@ -2014,6 +2014,7 @@
 }
 .hvr-shutter-in-horizontal:hover, .hvr-shutter-in-horizontal:focus, .hvr-shutter-in-horizontal:active {
   color: white;
+
 }
 .hvr-shutter-in-horizontal:hover:before, .hvr-shutter-in-horizontal:focus:before, .hvr-shutter-in-horizontal:active:before {
   -webkit-transform: scaleX(0);

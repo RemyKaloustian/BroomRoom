@@ -24,7 +24,10 @@ function AddColorAfterRefresh()
 
 $(document).ready(function () {
     $("header").addClass("c" + _color);
-    $("#validate_button").addClass("c" + _color);
+    //$("#validate_button").addClass("c" + _color);
+    $("button").each(function () {
+        $(this).addClass("c" + _color);
+    });
     console.log("!!!!color : " + _color);
     
 
