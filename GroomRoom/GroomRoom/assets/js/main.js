@@ -8,11 +8,12 @@ var _message = "";
 var _lastId = 0;
 
 var _refreshTime = 500;
+
 var _newTalk = "";
 
 $(document).ready(function ()
 {
-
+    $("#page_title").text("BroomRoom //" + _talk);
     $("#logp").text("logged as " + _username);
 
     //Getting the _messages from the talk at the beginning
@@ -23,8 +24,8 @@ $(document).ready(function ()
     });
 
     //Refreshing the messages every 2 seconds
-    setInterval(function () { RefreshMessages(); 
-    }, _refreshTime);
+    //setInterval(function () { RefreshMessages(); 
+    //}, _refreshTime);
 
 });//ready()
 
@@ -51,7 +52,9 @@ function SetId(value)
 
 function SetTalk(value)
 {
+
     _talk = value;
+    console.log("In SetTalk() _talk = " + _talk);
 }//SetTalk()
 
 function SetTitle()

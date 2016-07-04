@@ -13,7 +13,7 @@ function InsertConversation(newtalk)
                        success: function (html) {
                            //console.log("Insertion great !")
                            SetTalk(_newTalk);
-                           SetId(0);
+                           //SetId(0);
                            CleanMessages();
                            SetTitle();
                        },
@@ -42,11 +42,13 @@ function GetConversations()
                           $(".switch_button").each(function () {
                               $(this).click(function () {
                                   switchtalk_popup.close();
-                                  SetTalk($(this).text());
+                                  SetTalk($(this).text().trim());
                                   CleanMessages();
-                                  SetId(0);
+                                  //SetId(0);
                                   SetTitle();
-                                  //SelectMessages();
+                                  SelectMessages();
+                                  
+
                               });
                           });
                         

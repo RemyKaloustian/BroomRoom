@@ -1,5 +1,5 @@
 ﻿
-var _talk = "main";
+var _talk = "newconv";
 
 //Inserts a message in the database
 function InsertMessage()
@@ -47,14 +47,14 @@ function ScrollToLastMessage()
                        
                         success: function (html) 
                        { 
-                            //alert(html);
+                            alert(html);
                             $("#message_box").prepend(html);
                             AddColorAfterRefresh();
                             AddMarginBottom();
                             TreatLastId();
                             CheckImagesAfterSelect();
-
-                            //ScrollToLastMessage();
+                            
+                            ScrollToLastMessage();
                         },
 
                         error: function (html)

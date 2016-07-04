@@ -26,6 +26,7 @@ if($_POST['talk'] != "")
     //Going through the rows
     while($data = $request->fetch(PDO::FETCH_ASSOC))
     {
+        print_r($data);
         //Displaying the messages box with the messages content and author
         echo' <div class="message_box">
                             <p class="author"> '.$data['AUTHOR'].'</p>'.$data['CONTENT'].
