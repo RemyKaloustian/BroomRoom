@@ -28,8 +28,7 @@ $(document).ready(function () {
 
 function SetUpPicBox()
 {
-    console.log("In SetUpPicBox");
-    console.log("header.height = " + $("header").height().toString());
+   
     //$("#pics_box").css("display", "block");
 
     $("#pics_box").css("width", ($(window).width() * 0.3).toString() + "px");

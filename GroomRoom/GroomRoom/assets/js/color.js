@@ -9,11 +9,9 @@ var _colors = ["0050ef", "6a00ff", "d80073", "a0522d", "f44336", "fa6800", "088a
 _color = _colors[Math.floor(Math.random() * _colors.length)];
 
 
-console.log("The color is " + _color);
 
 function AddColorAfterRefresh()
 {
-   // console.log("In AddColor, the color is :" + _color);
     $(".message_box").each(function () {
         $(this).addClass("c"+_color);
     });
@@ -28,7 +26,6 @@ $(document).ready(function () {
     $("button").each(function () {
         $(this).addClass("c" + _color);
     });
-    console.log("!!!!color : " + _color);
     
 
 });
