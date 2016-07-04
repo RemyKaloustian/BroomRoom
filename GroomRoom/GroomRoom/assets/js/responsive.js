@@ -1,4 +1,6 @@
 ﻿var popup //The login popup
+var talk_popup //The conversation popup
+var newtalk_popup // The new conversation popup
 
 
 //IS USED TO MAKE A RESPONSIVE DESIGN
@@ -7,6 +9,8 @@ $(document).ready(function () {
     //Popup for login
     popup = $('[data-remodal-id=popup]').remodal();
     talk_popup = $('[data-remodal-id=talk_popup]').remodal();
+    newtalk_popup = $('[data-remodal-id=newtalk_popup]').remodal();
+
 
     /**
      * Opens the modal window
