@@ -61,6 +61,7 @@
     <Content Include="assets\js\message.js" />
     <Content Include="assets\js\pictures.js" />
     <Content Include="assets\js\responsive.js" />
+    <Content Include="cheat\index.html" />
     <Content Include="index.html" />
     <Content Include="insert_talk.php" />
     <Content Include="messages.xml" />

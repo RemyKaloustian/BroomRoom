@@ -27,12 +27,16 @@ function RemoveMarginBottom()
 
 function ScrollToLastMessage()
 {
-    var the_id = $(".message_box").last(); //Locating the last message
-
-    $('html, body').animate( //-->Animating the scroll
+    if ($("#message_box").has("p").length)
     {
-        scrollTop: $(the_id).offset().top
-    }, 'slow');
+        var the_id = $(".message_box").last(); //Locating the last message
+
+        $('html, body').animate( //-->Animating the scroll
+        {
+            scrollTop: $(the_id).offset().top
+        }, 'slow');
+    }
+   
 }//ScrollToLastMessage()
 
 //Selects the message at the loading of the page
