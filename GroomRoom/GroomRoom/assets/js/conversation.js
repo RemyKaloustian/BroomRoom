@@ -40,6 +40,8 @@ function GetConversations()
                           $("#switchtalk_popup").append(html);
 
                           $(".switch_button").each(function () {
+                              $(this).addClass("c" + _color);
+
                               $(this).click(function () {
                                   switchtalk_popup.close();
                                   SetTalk($(this).text().trim());

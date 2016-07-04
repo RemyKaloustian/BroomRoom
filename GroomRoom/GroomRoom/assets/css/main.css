@@ -149,6 +149,7 @@ button
 #switchtalk_popup button
 {
     width:55%;
+    margin-bottom:0.4rem;
 }
 
 .author
