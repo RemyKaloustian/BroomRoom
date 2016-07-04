@@ -253,5 +253,62 @@ function CheckImagesAfterSelect() {
             }
         }
 
+        if ($(this).html().indexOf(":fragile1") > -1) {
+            while ($(this).html().indexOf(":fragile1") > -1) {
+                $(this).html($(this).html().replace(":fragile1", "<img src=\"pictures/fragile1.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":fragile2") > -1) {
+            while ($(this).html().indexOf(":fragile2") > -1) {
+                $(this).html($(this).html().replace(":fragile2", "<img src=\"pictures/fragile2.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":fragile3") > -1) {
+            while ($(this).html().indexOf(":fragile3") > -1) {
+                $(this).html($(this).html().replace(":fragile3", "<img src=\"pictures/fragile3.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+
+        if ($(this).html().indexOf(":fragile4") > -1) {
+            while ($(this).html().indexOf(":fragile4") > -1) {
+                $(this).html($(this).html().replace(":fragile4", "<img src=\"pictures/fragile4.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":ivrogne") > -1) {
+            while ($(this).html().indexOf(":ivrogne") > -1) {
+                $(this).html($(this).html().replace(":ivrogne", "<img src=\"pictures/ivrogne.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":pedo") > -1) {
+            while ($(this).html().indexOf(":pedo") > -1) {
+                $(this).html($(this).html().replace(":pedo", "<img src=\"pictures/pedo.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":reno1") > -1) {
+            while ($(this).html().indexOf(":reno1") > -1) {
+                $(this).html($(this).html().replace(":reno1", "<img src=\"pictures/reno1.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
+        if ($(this).html().indexOf(":reno2") > -1) {
+            while ($(this).html().indexOf(":reno2") > -1) {
+                $(this).html($(this).html().replace(":reno2", "<img src=\"pictures/reno2.jpg\" class=\"message_pic\" />"));
+
+            }
+        }
+
     });
 }//CheckImages()

@@ -32,6 +32,8 @@ function SetUpPicBox()
     //$("#pics_box").css("display", "block");
 
     $("#pics_box").css("width", ($(window).width() * 0.3).toString() + "px");
+    //$("#pics_box").css("width", 5 + "px");
+
     $("#pics_box").css("top", $("header").height().toString() + "px");
     $("#pics_box").css("left", ($(window).width() - $("#pics_box").width()).toString() + "px");
 
