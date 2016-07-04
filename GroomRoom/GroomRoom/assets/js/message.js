@@ -70,6 +70,7 @@ function ScrollToLastMessage()
     function RefreshMessages()
     {
         //console.log("Refreshing the messages");
+        console.log("In RefreshMessages(),  talk = " + _talk + " , _lastId = " + _lastId);
         $.ajax(
                     {
                         url: "select_dynamic_messages.php",
@@ -80,7 +81,7 @@ function ScrollToLastMessage()
                         },
 
                         success: function (html) {
-                            //console.log("In success");
+                            console.log("In success");
                             // alert(html);      
                             RemoveMarginBottom();
 

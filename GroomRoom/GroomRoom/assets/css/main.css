@@ -146,6 +146,11 @@ button
    width:55%;
 }
 
+#switchtalk_popup button
+{
+    width:55%;
+}
+
 .author
 {
     font-family:GothamXLight;

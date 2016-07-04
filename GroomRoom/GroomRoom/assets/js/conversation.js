@@ -24,4 +24,40 @@ function InsertConversation(newtalk)
 
                        }
                    });//ajax()
-}
+}//InsertConversation()
+
+function GetConversations()
+{
+    $.ajax(
+                  {
+                      url: "select_conversations.php",
+                      type: "GET",
+                       
+
+                      success: function (html) {
+                          //alert(html);
+                          $("#switchtalk_popup").empty();
+                          $("#switchtalk_popup").append(html);
+
+                          $(".switch_button").each(function () {
+                              $(this).click(function () {
+                                  switchtalk_popup.close();
+                                  SetTalk($(this).text());
+                                  CleanMessages();
+                                  SetId(0);
+                                  SetTitle();
+                                  //SelectMessages();
+                              });
+                          });
+                        
+
+                          //ScrollToLastMessage();
+                      },
+
+                      error: function (html) {
+                          //alert(html);
+                          console.log("In error");
+
+                      }
+                  });//ajax()
+}//GetConversations

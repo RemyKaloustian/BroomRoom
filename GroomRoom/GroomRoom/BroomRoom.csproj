@@ -81,6 +81,7 @@
     <Content Include="pictures\zac1.jpg" />
     <Content Include="pictures\zac2.jpg" />
     <Content Include="pictures\zac3.jpg" />
+    <Content Include="select_conversations.php" />
     <Content Include="select_dynamic_messages.php" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
