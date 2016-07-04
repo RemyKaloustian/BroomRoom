@@ -5,7 +5,8 @@
 $(document).ready(function () {
 
     //Popup for login
-    popup = $('[data-remodal-id=modal]').remodal();
+    popup = $('[data-remodal-id=popup]').remodal();
+    talk_popup = $('[data-remodal-id=talk_popup]').remodal();
 
     /**
      * Opens the modal window
